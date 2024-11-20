@@ -17,5 +17,10 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    public String basicPrice(){
+        return "Il prezzo base esclusa l'iva " + this.price + "€";
+    }
+
+
 
 }
