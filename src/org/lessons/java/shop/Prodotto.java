@@ -21,6 +21,9 @@ public class Prodotto {
         return "Il prezzo base esclusa l'iva " + this.price + "€";
     }
 
+    public String priceIva(){
+        return "Il prezzo inclusa l'iva è di " + (this.price + (this.price / 100 * this.iva)) + "€";
+    }
 
 
 }
