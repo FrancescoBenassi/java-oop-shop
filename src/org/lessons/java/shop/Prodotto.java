@@ -25,5 +25,9 @@ public class Prodotto {
         return "Il prezzo inclusa l'iva è di " + (this.price + (this.price / 100 * this.iva)) + "€";
     }
 
+    public String completedName(){
+        return "Questo è il nome completo del prodotto " + this.code + this.name;
+    }
+
 
 }
