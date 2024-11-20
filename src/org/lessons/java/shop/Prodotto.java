@@ -26,7 +26,7 @@ public class Prodotto {
     }
 
     public String completedName(){
-        return "Questo è il nome completo del prodotto " + this.code + this.name;
+        return "Questo è il nome completo del prodotto " + this.code + "-" + this.name;
     }
 
 
