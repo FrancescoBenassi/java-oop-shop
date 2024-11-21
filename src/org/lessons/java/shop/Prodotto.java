@@ -1,16 +1,18 @@
 package org.lessons.java.shop;
 
+import java.util.Random;
+
 public class Prodotto {
 
     int code;
     String name;
     String description;
-    int price;
-    int iva;
+    float price;
+    float iva;
         
     public Prodotto(String name, String description, int price, int iva){
-        double doubleRandomNumber = Math.random() * 1000;
-        this.code = (int)doubleRandomNumber;
+        Random rand = new Random();
+        this.code = rand.nextInt(999999);
         this.name = name;
         this.description = description;
         this.price = price;
